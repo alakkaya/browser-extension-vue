@@ -3,7 +3,7 @@
   src: url("./fonts/NotoSans-VariableFont_wdth\,wght.ttf") format('truetype');
   font-display: swap;
   font-weight: 100 900;
-} 
+}
 
 :root {
   /* Colors */
@@ -26,47 +26,66 @@
   --text-color: var(--clr-neutral-300);
   --btn-text-color: var(--clr-neutral-0);
   --switch-btn-bg-color: var(--clr-red-400);
-  --remove-btn-bg-color: var(--clr-red-600);
+  --remove-btn-bg-color: var(--clr-neutral-600);
   --bg-neutral-800: var(--clr-neutral-800);
   --bg-neutral-700: var(--clr-neutral-700);
-  --icon-dark:var(--clr-neutral-0);
+  --icon-dark: var(--clr-neutral-0);
   --border-color: var(--clr-neutral-600);
-  --hover-color: var(--clr-neutral-900); 
+  --hover-color: var(--clr-neutral-900);
   --gradient-color-1: #04091b;
   --gradient-color-2: #091540;
 
   /* Fonts */
-  --fs-34: 2.125rem;   /* 34px */
-  --fs-20: 1.25rem;    /* 20px */
-  --fs-16: 1rem;       /* 16px */
+  --fs-34: 2.125rem;
+  /* 34px */
+  --fs-20: 1.25rem;
+  /* 20px */
+  --fs-16: 1rem;
+  /* 16px */
   --fw-bold: 700;
   --fw-medium: 500;
   --fw-regular: 400;
   --lh-1: 1;
   --lh-12: 1.2;
   --lh-14: 1.4;
-  
+
   /* Spacing */
-  --sp-0:0;
-  --sp-2:0.125rem;    /* 2px */
-  --sp-4:0.25rem;     /* 4px */
-  --sp-6:0.375rem;    /* 6px */
-  --sp-8:0.5rem;      /* 8px */
-  --sp-10:0.625rem;   /* 10px */
-  --sp-12:0.75rem;    /* 12px */
-  --sp-16:1rem;       /* 16px */
-  --sp-20:1.25rem;    /* 20px */
-  --sp-24:1.5rem;     /* 24px */
-  --sp-32:2rem;       /* 32px */
-  --sp-40:2.5rem;     /* 40px */
-  --sp-48:3rem;       /* 48px */
-  --sp-64:4rem;       /* 64px */
-  --sp-80:5rem;       /* 80px */
+  --sp-0: 0;
+  --sp-2: 0.125rem;
+  /* 2px */
+  --sp-4: 0.25rem;
+  /* 4px */
+  --sp-6: 0.375rem;
+  /* 6px */
+  --sp-8: 0.5rem;
+  /* 8px */
+  --sp-10: 0.625rem;
+  /* 10px */
+  --sp-12: 0.75rem;
+  /* 12px */
+  --sp-16: 1rem;
+  /* 16px */
+  --sp-20: 1.25rem;
+  /* 20px */
+  --sp-24: 1.5rem;
+  /* 24px */
+  --sp-32: 2rem;
+  /* 32px */
+  --sp-40: 2.5rem;
+  /* 40px */
+  --sp-48: 3rem;
+  /* 48px */
+  --sp-64: 4rem;
+  /* 64px */
+  --sp-80: 5rem;
+  /* 80px */
 
 }
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -74,15 +93,15 @@
 * {
   margin: 0;
   padding: 0;
-  font:inherit;
+  font: inherit;
 }
 
 html {
-  color-scheme:dark light;
+  color-scheme: dark light;
   color: var(--text-color);
-  font-family: 'Nato Sans', system-ui,sans-serif;
+  font-family: 'Nato Sans', system-ui, sans-serif;
 
-  &.light{
+  &.light {
     --title-color: var(--clr-neutral-900);
     --text-color: var(--clr-neutral-600);
     --btn-text-color: var(--clr-neutral-900);
@@ -101,7 +120,7 @@ html {
 body {
   min-height: 100vh;
   min-height: 100dvh;
-  background-image:linear-gradient(180deg, var(--gradient-color-1) 0%, var(--gradient-color-2) 100%);
+  background-image: linear-gradient(180deg, var(--gradient-color-1) 0%, var(--gradient-color-2) 100%);
   /* 4. Add accessible line-height */
   line-height: 1.5;
   /* 5. Improve text rendering */
@@ -109,15 +128,19 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
- button  {
+button {
   cursor: pointer;
-  background:transparent;
+  background: transparent;
   border: none;
 }
 
@@ -126,46 +149,46 @@ img, picture, video, canvas, svg {
 
 .container {
   max-width: 1200px;
-  margin-inline:  auto;
+  margin-inline: auto;
   padding-inline: var(--sp-16);
 }
 
-.text-preset-1{
+.text-preset-1 {
   font-size: var(--fs-34);
   font-weight: var(--fw-bold);
   line-height: var(--lh-1);
   letter-spacing: -1px;
 }
 
-.text-preset-2{
+.text-preset-2 {
   font-size: var(--fs-20);
   font-weight: var(--fw-bold);
   line-height: var(--lh-12);
   letter-spacing: -0.2px;
 }
 
-.text-preset-3{
+.text-preset-3 {
   font-size: var(--fs-20);
   font-weight: var(--fw-medium);
   line-height: var(--lh-14);
   letter-spacing: -0.3px;
 }
 
-.text-preset-4{
+.text-preset-4 {
   font-size: var(--fs-20);
   font-weight: var(--fw-medium);
   line-height: var(--lh-14);
   letter-spacing: -0.3px;
 }
 
- .text-preset-5{
+.text-preset-5 {
   font-size: var(--fs-16);
   font-weight: var(--fw-regular);
   line-height: var(--lh-14);
   letter-spacing: -0.5px;
 }
 
-.text-preset-6{
+.text-preset-6 {
   font-size: var(--fs-16);
   font-weight: var(--fw-medium);
   line-height: var(--lh-14);

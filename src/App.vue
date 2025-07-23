@@ -1,7 +1,8 @@
 <script setup lang="ts">
-import AppLayout from '@/layouts/AppLayout.vue';
-import AppHeader from './components/app-header.vue';
-import ExtensionsHeader from './components/extensions-header.vue';
+import AppLayout from "@/layouts/AppLayout.vue";
+import AppHeader from "./components/app-header.vue";
+import ExtensionsHeader from "./components/extensions-header.vue";
+import ExtensionsCards from "./components/extensions-cards.vue";
 </script>
 
 <template>
@@ -16,7 +17,6 @@ import ExtensionsHeader from './components/extensions-header.vue';
       <ExtensionsCards />
     </template>
   </AppLayout>
-
 </template>
 <style scoped>
 /* css */
