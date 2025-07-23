@@ -36,6 +36,9 @@ const cards = ref<Extension[]>(extensions);
 </template>
 <style scoped>
 .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--sp-12);
   & .card {
     border: 1px solid var(--border-color);
     border-radius: var(--sp-20);
@@ -45,6 +48,7 @@ const cards = ref<Extension[]>(extensions);
     & .card-content {
       margin-bottom: var(--sp-48);
       display: flex;
+      align-items: flex-start;
       gap: var(--sp-16);
       & .card-text {
         & .text-preset-2 {
