@@ -17,12 +17,11 @@ const cards = ref<Extension[]>(extensions);
       <div class="cards-grid">
         <article v-for="card of cards" :key="card.id" class="card">
           <div class="card-content">
-            <img src="/images/logo-devlens.svg" alt="devlens logo" />
+            <img :src="card.logo" :alt="`${card.name} logo`" />
             <div class="card-text">
-              <h2 class="text-preset-2">Devlens</h2>
+              <h2 class="text-preset-2">{{ card.name }}</h2>
               <p class="text-preset-5">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde,
-                perspiciatis.
+                {{ card.description }}
               </p>
             </div>
           </div>
