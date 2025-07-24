@@ -5,3 +5,5 @@ export type Extension = {
   description: string;
   isActive: boolean;
 };
+
+export type FilterButtons = "all" | "active" | "inactive";

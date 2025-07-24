@@ -1,8 +1,24 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps<{ name: string; checked: boolean }>();
+
+const emit = defineEmits<{
+  "update:checked": [boolean];
+}>();
+
+const handleChange = (event: Event) => {
+  const target = event.target as HTMLInputElement;
+  emit("update:checked", target.checked);
+};
+</script>
 
 <template>
   <label class="switch">
-    <input type="checkbox" />
+    <input
+      type="checkbox"
+      :checked="checked"
+      @change="handleChange"
+      :aria-label="`Toggle ${name} extension`"
+    />
     <span class="slider"></span>
   </label>
 </template>
